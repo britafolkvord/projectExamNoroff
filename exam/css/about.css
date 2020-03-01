@@ -1,0 +1,121 @@
+/*Global styles */
+
+#about{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
+
+  .description{
+      width: 50%;
+      background-color: #ededed;
+      color: #3a3a3a;
+      font-size: 1.4rem;
+      padding: 24px;
+      margin: 40px 32px;
+      line-height: 40px;
+      box-shadow: 4px 6px 6px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  .description h2{
+      font-size: 2rem;
+      margin-bottom: 24px;
+      font-weight: 600;
+  }
+
+  blockquote{
+      font-style: italic;
+      margin-top: 24px;
+  }
+
+  .facts{
+      width: 20%;
+      background-color: #DFECFD;
+      padding: 24px;
+      color: #3a3a3a;
+      font-size: 1.2rem;
+      margin: 40px 32px;
+      line-height: 40px;
+      box-shadow: 4px 6px 6px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  .facts h2{
+    font-size: 2rem;
+    margin-bottom: 24px;
+    font-weight: 600;
+  }
+
+  .items-center{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    line-height: 50px;
+    align-items: center;
+}
+
+.items-center h3{
+    font-weight: 600;
+}
+
+  iframe{
+      width: 80%;
+      margin: 40px auto 64px auto;
+  }
+
+@keyframes loader {
+    to {transform: rotate(360deg);}
+  }
+   
+  .loader:before {
+    content: '';
+    box-sizing: border-box;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    margin-top: -10px;
+    margin-left: -10px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    border-top-color: #394D71;
+    border-bottom-color: #394D71;
+    animation: loader .8s ease infinite;
+  }
+
+
+  /*mobile styles*/
+@media only screen and (max-width: 768px) {
+
+    #about{
+        flex-direction: column;
+    }
+
+    .description{
+        width: 100%;
+    }
+
+    .facts{
+        width: 100%;
+    }
+    
+    iframe{
+        width: 100%;
+    }
+}
+
+
+/*tablet styles*/
+@media only screen and (min-width: 769px) and (max-width: 1024px){
+
+    .facts{
+        width: 30%;
+
+    }
+
+}

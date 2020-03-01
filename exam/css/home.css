@@ -1,0 +1,80 @@
+/*Global styles */
+body{
+  background-color: #000;
+}
+
+#particles-js{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+  }
+
+#particles-js canvas {
+    position: absolute;
+}
+
+
+h1{
+  font-size: 2.4rem;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+}
+
+  .white-border-btn{
+    font-size: 2rem;
+    font-weight: bolder;
+    padding: 32px;
+    color: #fff;
+    border: solid #fff;
+    border-radius: 15px;
+    margin-top: 48px;
+    position: relative;
+    z-index: 1;
+    transition: all 0.15s ease-in-out;
+  }
+
+  .white-border-btn:hover{
+    background-color: #fff;
+    color: #000;
+  }
+
+
+  /*mobile styles*/
+@media only screen and (max-width: 767px) {
+
+    .white-border-btn{
+      font-size: 1.6rem;
+      font-weight: bolder;
+      text-align: center;
+      width: 75%;
+      padding: 16px;
+      color: #fff;
+      border: solid #fff;
+    }
+
+    .next-page h1{
+      font-size: 2rem;
+      padding: 0px 16px;
+        }
+}
+
+
+/* desktop */
+@media only screen and (min-width: 1280px) {
+nav {
+  position: absolute;
+  z-index: 1;
+}
+    
+nav,
+nav ul,
+nav ul a,
+.logo,
+#toggle {
+  background: transparent;
+  }
+}
